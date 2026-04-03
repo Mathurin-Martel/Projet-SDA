@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.ArrayList;
+
+public class Java_Csv{
+    ArrayList<String[]> ListeAretes=new ArrayList<>();
+    public static void main(String[] args){
+        Java_Csv j= new Java_Csv();
+        try{ j.readCsv();}
+        catch(IOException e){System.out.println("Erreur");}
+    }
+    public void readCsv() throws IOException{
+        File file = new File("donnees_osmnx.csv");
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        String line;
+        String[] tokenizedLine={};
+        int limit=0;
+        
+        line = bufferedReader.readLine(); //pour skip la première ligne
+
+        while((line = bufferedReader.readLine()) != null && limit!=9){//Changer le nombre ou supprimer la limite
+            limit=limit+1;
+            tokenizedLine = line.split(";");
+            ListeAretes.add(tokenizedLine);   
+        }
+        for (String[] ligne : ListeAretes) {
+            System.out.println(java.util.Arrays.toString(ligne) + ", ");
+        }
+    }
+}
