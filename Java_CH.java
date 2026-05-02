@@ -33,7 +33,7 @@ public class Java_CH{
         contraction();
 
         //Etape Requete
-        //requete(depart, arrivee)
+        requete(depart, arrivee);
 
         //Pour le programme final, separer la préparation de la requete
     }
@@ -132,6 +132,12 @@ public class Java_CH{
                 }
             }
         }
+    }
+    
+    public void requete(String depart, String arrivee){
+        return;
+        //Faire la recherche Dijkstra depuis le depart, si on ne trouve pas ca veut dire que le chemin a été supprimé lors de l'orientation du graphe
+        //Du coup il faudra recommencer la recherche depuis arrivee
     }
 }
 
