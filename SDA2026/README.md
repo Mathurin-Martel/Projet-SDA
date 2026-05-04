@@ -15,7 +15,8 @@ Le projet contient principalement :
 - `Dijkstra.java` : algorithme de référence.
 - `AStar.java` : algorithme A* avec heuristique euclidienne.
 - `ALT.java` : algorithme ALT avec landmarks.
-MATHURIN RAJOUTE TES FICHIERS ICI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- `Java_CH_donnees.java` : Phase de prétraitement de l'algorithme CH.
+- `Java_CH.java` : Lancement de l'algorithme CH.
 - `Benchmark.java` : génération des requêtes, lancement des tests et création des CSV.
 - `Main.java` : point d’entrée du programme.
 - `ResultatChemin.java` : stockage des résultats d’une requête.
@@ -133,7 +134,7 @@ Le lot de requêtes est généré directement dans `Benchmark.java`.
 
 Il n’y a donc pas forcément de fichier `lot_requetes.csv`. Le choix a été fait comme ça pour éviter d’écrire les requêtes à la main, tout en gardant des tests reproductibles grâce à la graine fixe.
 
-## Résumé rapide pour executer le projet :
+## Résumé rapide pour exécuter le projet :
 
 Pour lancer le projet depuis zéro :
 
